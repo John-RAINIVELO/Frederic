@@ -1,4 +1,5 @@
 <?php
+
 /**
  * La configuration de base de votre installation WordPress.
  *
@@ -27,7 +28,7 @@ define('DB_NAME', 'wpbob');
 define('DB_USER', 'root');
 
 /** Mot de passe de la base de données MySQL. */
-define('DB_PASSWORD', ' ');
+define('DB_PASSWORD', 'bobman0505');
 
 /** Adresse de l’hébergement MySQL. */
 define('DB_HOST', 'localhost');
@@ -36,8 +37,8 @@ define('DB_HOST', 'localhost');
 define('DB_CHARSET', 'utf8');
 
 /** Type de collation de la base de données.
-  * N’y touchez que si vous savez ce que vous faites.
-  */
+ * N’y touchez que si vous savez ce que vous faites.
+ */
 define('DB_COLLATE', '');
 
 /**#@+
@@ -89,8 +90,8 @@ define('WP_DEBUG', false);
 /* C’est tout, ne touchez pas à ce qui suit ! Bonne publication. */
 
 /** Chemin absolu vers le dossier de WordPress. */
-if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+if (!defined('ABSPATH'))
+  define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Réglage des variables de WordPress et de ses fichiers inclus. */
 require_once(ABSPATH . 'wp-settings.php');
